@@ -1,13 +1,7 @@
-//
-//  ContentView.swift
-//  Alarm
-//
-//  Created by Roman Riepa on 10.03.2023.
-//
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainAlarmView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,6 +15,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainAlarmView()
     }
 }

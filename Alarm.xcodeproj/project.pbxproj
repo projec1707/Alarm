@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F1A0FB7F29BB6A0400B9CC3C /* AlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A0FB7E29BB6A0400B9CC3C /* AlarmApp.swift */; };
-		F1A0FB8129BB6A0400B9CC3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A0FB8029BB6A0400B9CC3C /* ContentView.swift */; };
+		F1A0FB8129BB6A0400B9CC3C /* MainAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A0FB8029BB6A0400B9CC3C /* MainAlarmView.swift */; };
 		F1A0FB8329BB6A0600B9CC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A0FB8229BB6A0600B9CC3C /* Assets.xcassets */; };
 		F1A0FB8729BB6A0600B9CC3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A0FB8629BB6A0600B9CC3C /* Preview Assets.xcassets */; };
+		F1A0FB9B29BBA09600B9CC3C /* GrayedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A0FB9A29BBA09600B9CC3C /* GrayedTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1A0FB7B29BB6A0400B9CC3C /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A0FB7E29BB6A0400B9CC3C /* AlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmApp.swift; sourceTree = "<group>"; };
-		F1A0FB8029BB6A0400B9CC3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1A0FB8029BB6A0400B9CC3C /* MainAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlarmView.swift; sourceTree = "<group>"; };
 		F1A0FB8229BB6A0600B9CC3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1A0FB8429BB6A0600B9CC3C /* Alarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alarm.entitlements; sourceTree = "<group>"; };
 		F1A0FB8629BB6A0600B9CC3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1A0FB9A29BBA09600B9CC3C /* GrayedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayedTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,15 @@
 			isa = PBXGroup;
 			children = (
 				F1A0FB7E29BB6A0400B9CC3C /* AlarmApp.swift */,
-				F1A0FB8029BB6A0400B9CC3C /* ContentView.swift */,
+				F1A0FB8029BB6A0400B9CC3C /* MainAlarmView.swift */,
+				F1A0FB9429BB9F6C00B9CC3C /* Model */,
+				F1A0FB9329BB9F4100B9CC3C /* ViewModel */,
+				F1A0FB9229BB9F2900B9CC3C /* Views */,
+				F1A0FB9129BB9F0F00B9CC3C /* Constants */,
+				F1A0FB9029BB9EF900B9CC3C /* Fonts */,
+				F1A0FB8F29BB9EE000B9CC3C /* Time And Date */,
+				F1A0FB8E29BB9ECC00B9CC3C /* Local Notifications */,
+				F1A0FB8D29BB9EB500B9CC3C /* Sounds */,
 				F1A0FB8229BB6A0600B9CC3C /* Assets.xcassets */,
 				F1A0FB8429BB6A0600B9CC3C /* Alarm.entitlements */,
 				F1A0FB8529BB6A0600B9CC3C /* Preview Content */,
@@ -67,6 +77,95 @@
 				F1A0FB8629BB6A0600B9CC3C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1A0FB8D29BB9EB500B9CC3C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F1A0FB8E29BB9ECC00B9CC3C /* Local Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Notifications";
+			sourceTree = "<group>";
+		};
+		F1A0FB8F29BB9EE000B9CC3C /* Time And Date */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Time And Date";
+			sourceTree = "<group>";
+		};
+		F1A0FB9029BB9EF900B9CC3C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F1A0FB9129BB9F0F00B9CC3C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F1A0FB9229BB9F2900B9CC3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1A0FB9529BB9FB100B9CC3C /* Main Views */,
+				F1A0FB9629BB9FBE00B9CC3C /* Subviews */,
+				F1A0FB9729BB9FDF00B9CC3C /* Supporting Views */,
+				F1A0FB9829BBA01D00B9CC3C /* Unused Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1A0FB9329BB9F4100B9CC3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1A0FB9429BB9F6C00B9CC3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1A0FB9529BB9FB100B9CC3C /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		F1A0FB9629BB9FBE00B9CC3C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		F1A0FB9729BB9FDF00B9CC3C /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1A0FB9A29BBA09600B9CC3C /* GrayedTextView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		F1A0FB9829BBA01D00B9CC3C /* Unused Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Unused Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1A0FB8129BB6A0400B9CC3C /* ContentView.swift in Sources */,
+				F1A0FB8129BB6A0400B9CC3C /* MainAlarmView.swift in Sources */,
 				F1A0FB7F29BB6A0400B9CC3C /* AlarmApp.swift in Sources */,
+				F1A0FB9B29BBA09600B9CC3C /* GrayedTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +379,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PromFilm.Alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -317,10 +417,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PromFilm.Alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
